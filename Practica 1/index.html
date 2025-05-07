@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <style>
+        .header {
+            background-color: green;
+            padding: 15px;
+            text-align: center;
+        }
+        .header h2 {
+            color: white;
+            margin: 0;
+        }
+        .nav_menu {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+                .nav_menu a {
+                    float: left;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                .nav_menu a:hover {
+                    background-color: white;
+                    color: green;
+                }
+        .container {
+            background-color: lightgray;
+            text-align: center;
+        }
+        .columnA,
+        .columnB,
+        .columnC {
+            text-align: center;
+            display: inline-block;
+            width: 33%;
+            background-color: lightgray;
+            height: 300px;
+            
+        }
+        .footer {
+            background-color: green;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            gap: 10px;
+        }
+        .main {
+            flex: 3;
+            background-color: lightgray;
+            text-align: center;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<h1>Jose Antonio Zavala Espinoza</h1>
+<!-- Enlace a GitHub-->
+<a href="https://github.com/Jazavala1992/Web-3.git">GitHub Link</a>
+<br>
+<br>
+<!-- Layout de 1 columna-->
+<body>
+    <section>
+    <div class="header">
+        <h2>Layout de 1 columna</h2>
+    </div>
+    <div class="nav_menu">
+        <a href="#">Algo</a>
+        <a href="#">DS</a>
+        <a href="#">Language</a>
+    </div>
+
+    <div class="container">
+        <h1>Título</h1>
+        <p>Contenido principal</p>
+    </div>
+
+    <div class="footer">
+        <a href="#">About</a><br>
+        <a href="#">Career</a><br>
+        <a href="#">Contact Us</a>
+    </div>
+</section>
+
+<br>
+<!-- Layout de 2 columnas-->
+<br>
+<body>
+    <div class="header">
+        <h2>Layout 2 columnas</h2>
+    </div>
+    <div class="nav_menu">
+        <a href="#">Algo</a>
+        <a href="#">DS</a>
+        <a href="#">Language</a>
+    </div>
+
+    <div class="container2">
+        <div class="main">
+            <h1>Título Principal</h1>
+            <p>Contenido principal</p>
+        </div>
+        <div class="sidebar">
+            <h2>Barra Lateral</h2>
+            <p>Contenido de la barra lateral</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">About</a><br>
+        <a href="#">Career</a><br>
+        <a href="#">Contact Us</a>
+    </div>
+</body>
+<br>
+<!-- Layout de 3 columnas-->
+<br>
+<section>
+    <div class="header">
+        <h2>Layout 3 columnas</h2>
+    </div>
+    <div class="nav_menu">
+        <a href="#">Algo</a>
+        <a href="#">DS</a>
+        <a href="#">Language</a>
+    </div>
+
+    <div class="columnA">Contenido de la Columna A</div>
+    <div class="columnB">Contenido de la Columna B</div>
+    <div class="columnC">Contenido de la Columna C</div>
+
+    <div class="footer">
+        <a href="#">About</a><br>
+        <a href="#">Career</a><br>
+        <a href="#">Contact Us</a>
+    </div> 
+</section>
+<br>
+<!-- Layout de Cuadricula-->
+<br>
+<section>
+    <div class="header">
+        <h2>Layout de Cuadricula</h2>
+    </div>
+    <div class="nav_menu">
+        <a href="#">Algo</a>
+        <a href="#">DS</a>
+        <a href="#">Language</a>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <div class="footer">
+        <a href="#">About</a><br>
+        <a href="#">Career</a><br>
+        <a href="#">Contact Us</a>
+    </div> 
+</section>
+<br>
+<!-- Cabecera, Barra Lateral, Contenido y Pie de Página-->
+<br>
+<section>
+    <div class="header">
+        <h2>Cabecera</h2>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <p>Barra Lateral</p>
+        </div>
+        <div class="main-content">
+            <p>Contenido principal</p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">About</a><br>
+        <a href="#">Career</a><br>
+        <a href="#">Contact Us</a>
+    </div>
+</section>
+</body>
+</html>
