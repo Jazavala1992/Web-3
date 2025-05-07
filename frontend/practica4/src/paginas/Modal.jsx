@@ -11,7 +11,7 @@ function Modal({ isOpen, closeModal }) {
     <>
       <div className="modal-overlay" onClick={closeModal}></div>
       <dialog open className="modal">
-        <Formik
+        <Formik 
           initialValues={{
             nombre: "",
             apellido: "",
